@@ -1,0 +1,93 @@
+@import '../../../../styles/inc/variable.css';
+
+.popular-search-accordion {
+    margin-bottom: 72px;
+
+    @media all and (max-width: $screen-lg) {
+        margin-bottom: 48px;
+    }
+
+    @media all and (max-width: $mobile) {
+        margin-bottom: 32px;
+    }
+
+    .accordion-item {
+        background-color: transparent;
+        border: 0;
+
+        .accordion-header {
+            .accordion-button {
+                font-family: var(--font-secondary);
+                @include fontsize(12px);
+                text-transform: uppercase;
+                font-weight: var(--bold);
+                color: var(--color-light2);
+                line-height: var(--line-height-secondary);
+                background-color: transparent;
+                padding: 0;
+                border-color: transparent;
+                margin-bottom: 16px;
+                box-shadow: none;
+
+                &.collapsed {
+                    margin-bottom: 0;
+
+                    &::after {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M3.75 13.125L10 6.875L16.25 13.125' stroke='%23F0EEE8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &::after {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M3.75 13.125L10 6.875L16.25 13.125' stroke='%23F0EEE8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    @include widthheight(20px, 20px);
+                    background-size: 20px;
+                    margin-left: 16px;
+                    transform: rotate(0);
+
+                    @media all and (max-width: $mobile) {
+                        margin-left: auto;
+                    }
+                }
+
+                &:hover, &:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 0;
+
+            .popular-search-list {
+                @media all and (max-width: $screen-lg) {
+                    margin-bottom: 24px;
+                }
+
+                @media all and (max-width: $mobile) {
+                    margin-bottom: 16px;
+                }
+
+                li {
+                    padding: 4px 0;
+
+                    a {
+                        font-family: var(--font-base);
+                        @include fontsize(16px);
+                        font-weight: var(--normal);
+                        color: var(--color-light2);
+                        line-height: var(--line-height-secondary);
+                        width: fit-content;
+                        border-bottom: solid 1px transparent;
+                        @include transition(all .3s ease);
+
+                        &:hover {
+                            border-bottom: 1px solid var(--color-light2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

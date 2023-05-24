@@ -1,0 +1,100 @@
+@import '../../../../styles/inc/variable.css';
+
+.static-detail-desc-wrapper {
+    .static-detail-desc {
+        padding-bottom: 40px;
+
+        h2, h3 {
+            @include fontsize(20px);
+            font-weight: var(--medium);
+            color: var(--color-dark);
+            padding-bottom: 24px;
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(16px);
+                padding-bottom: 16px;
+            }
+        }
+        
+        .news-detail-img {
+            margin-bottom: 24px;
+        }
+
+        p {
+            padding-bottom: 40px;
+
+            @media all and (max-width: $mobile) {
+                padding-bottom: 24px;
+            }
+
+            &:first-of-type {
+                @include fontsize(24px);
+                padding-bottom: 24px;
+
+                @media all and (max-width: $screen-lg8) {
+                    @include fontsize(20px);
+                }
+
+                @media all and (max-width: $mobile) {
+                    @include fontsize(18px);
+                }
+            }
+        }
+
+        ul {
+            list-style: outside;
+            padding-bottom: 30px;
+            padding-left: 13px;
+
+            @media all and (max-width: $mobile) {
+                padding-bottom: 24px;
+                padding-left: 15px;
+            }
+
+            li {
+                font-family: var(--font-base);
+                @include fontsize(18px);
+                font-weight: var(--normal);
+                color: var(--color-dark);
+                line-height: var(--line-height-secondary);
+
+                &:not(:last-child) {
+                    padding-bottom: 14px;
+                }
+            
+                @media all and (max-width: $mobile) {
+                    @include fontsize(16px);
+                }
+            }
+        }
+    }
+
+    .static-detail-img {
+        margin-bottom: 40px;
+
+        @media all and (max-width: $mobile) {
+            margin-bottom: 32px;
+        }
+
+        img {
+            height: 540px;
+
+            @media all and (max-width: $screen-lg8) {
+                height: 480px;
+            }
+
+            @media all and (max-width: $mobile) {
+                height: 240px;
+            }
+        }
+    }
+
+    .static-detail-sidebar {
+        top: 0;
+        padding-bottom: 40px;
+    
+        &.scrolled {
+            top: 130px;
+        }
+    }
+}

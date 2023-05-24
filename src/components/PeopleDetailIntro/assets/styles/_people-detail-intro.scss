@@ -1,0 +1,66 @@
+@import '../../../../styles/inc/variable.css';
+
+.people-detail-intro-wrapper {
+    @media all and (max-width: $screen-lg8) {
+        margin-top: 40px;
+    }
+
+    @media all and (max-width: $mobile) {
+        margin-top: 32px;
+    }
+
+    h3 {
+        font-family: var(--font-secondary);
+        @include fontsize(40px);
+        font-weight: var(--medium);
+        color: var(--secondary-dark);
+        line-height: var(--line-height-primary);
+        padding-bottom: 16px;
+
+        @media all and (max-width: $screen-lg8) {
+            @include fontsize(32px);
+            padding-bottom: 24px;
+        }
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(20px);
+            padding-bottom: 16px;
+        }
+    }
+
+    .position {
+        @include fontsize(18px);
+        font-weight: var(--normal);
+        color: var(--color-light4);
+        line-height: var(--line-height-secondary);
+        padding-bottom: 24px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 40px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 32px;
+        }
+    }
+
+    .people-detail-intro-list {
+        li {
+            &:not(:last-child) {
+                margin-right: 48px;
+            }
+        }
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 40px;
+        }
+    }
+
+    .people-share {
+        margin-top: 32px;
+
+        @media all and (max-width: $screen-lg8) {
+            margin-top: 0;
+        }
+    }
+}

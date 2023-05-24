@@ -1,0 +1,19 @@
+@import '../../../../styles/inc/variable.css';
+
+.contact-terms {
+    @include fontsize(14px);
+    font-weight: var(--normal);
+    color: var(--color-dark-light);
+    line-height: var(--line-height-secondary);
+    padding-top: 16px;
+
+    a {
+        color: var(--color-dark-light);
+        border-bottom: solid 1px var(--color-dark-light);
+
+        &:hover {
+            color: var(--primary-color);
+            border-bottom: solid 1px var(--primary-color);
+        }
+    }
+}

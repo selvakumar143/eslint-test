@@ -1,0 +1,72 @@
+@import '../../../../styles/inc/variable.css';
+
+.property-card-badge {
+    position: relative;
+    grid-column: 1/span 3;
+    padding: 32px 0;
+
+    @media all and (max-width: $screen-lg) {
+        grid-column: 1/span 2;
+    }
+
+    @media all and (max-width: $mobile) {
+        grid-column: 1/span 1;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        height: 100%;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: 0;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        height: 100%;
+        width: 100%;
+        background: url('../images/bg_pattern.svg');
+        background-size: cover;
+        z-index: 1;
+    }
+
+    .property-badge-content {
+        position: relative;
+        z-index: 10;
+    }
+
+    .badge-text {
+        @include fontsize(24px);
+        font-weight: var(--medium);
+        color: var(--color-white);
+        line-height: var(--line-height-primary);
+
+        span {
+            font-family: var(--font-base);
+            font-weight: var(--light);
+            font-style: italic;
+        }
+    }
+
+    .badge-list {
+        @media all and (max-width: $screen-lg) {
+            padding-top: 16px;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-right: 48px;
+            }
+        }
+    }
+}

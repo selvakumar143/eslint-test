@@ -1,0 +1,86 @@
+@import '../../../../styles/inc/variable.css';
+
+.pattern-banner-wrapper {
+    position: relative;
+    
+    &.blue {
+        &::before {
+            background-color: var(--pattern-banner-bg-secondary);
+        }
+
+        .secondary-text {
+            color: var(--secondary-color-light);
+        }
+    }
+
+    &.brown {
+        &::before {
+            background-color: var(--pattern-banner-bg-primary);
+        }
+    }
+
+    .secondary-text {
+        color: var(--color-white);
+        padding-bottom: 32px ;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 24px ;
+        }
+    }
+
+    p {
+        @include fontsize(24px);
+        font-weight: var(--normal);
+        color: var(--color-white);
+        line-height: var(--line-height-secondary);
+        padding-bottom: 50px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 48px;
+        }
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(18px);
+            padding-bottom: 32px;
+        }
+    }
+
+    .pattern-list {
+        li {
+            &:not(:last-child) {
+                margin-right: 48px;
+
+                @media all and (max-width: $mobile) {
+                    margin-right: 32px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        height: 100%;
+        width: 100%;
+        background: url('../images/bg_pattern_1.svg');
+        background-size: cover;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,86 @@
+{
+  "name": "gatsby-theme-starberry-mira",
+  "private": true,
+  "description": "One of theme from starberry to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "@starberry",
+  "dependencies": {
+    "@loadable/component": "^5.15.2",
+    "@react-google-maps/api": "^2.17.1",
+    "@starberry/gatsby-library-common": "^1.0.1-284ce4b.0",
+    "@starberry/gatsby-theme-utils": "git+https://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@github.com/starberry/gatsby-theme-utils.git",
+    "algoliasearch": "^4.14.3",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.3",
+    "fslightbox-react": "^1.6.2-2",
+    "gatsby": "^4.25.5",
+    "gatsby-plugin-advanced-sitemap": "~2.0.0",
+    "gatsby-plugin-force-trailing-slashes": "^1.0.6",
+    "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-netlify": "5.1.0",
+    "gatsby-plugin-sass": "^5.22.0",
+    "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-source-filesystem": "4.24.0",
+    "gatsby-source-strapi": "^3.0.4",
+    "gatsby-transformer-sharp": "^4.24.0",
+    "get-video-id": "^3.6.5",
+    "jquery": "^3.6.4",
+    "jstoxml": "^3.2.7",
+    "leaflet": "^1.9.3",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-autosuggest": "^10.1.0",
+    "react-bootstrap": "^2.6.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.1.0",
+    "react-instantsearch-hooks-web": "^6.38.1",
+    "react-leaflet": "^4.2.1",
+    "react-modal-video": "^2.0.0",
+    "react-select": "^5.7.0",
+    "react-share": "^4.4.1",
+    "react-slick": "^0.29.0",
+    "reaptcha": "^1.7.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sass": "^1.56.1",
+    "slick-carousel": "^1.8.1",
+    "uk-ireland-stampduty-calculator": "^1.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-google": "^0.14.0",
+    "gatsby": "^4.25.5",
+    "prettier": "^2.7.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^4.25.5",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starberry/gatsby-theme-starberry-mira"
+  },
+  "bugs": {
+    "url": "https://github.com/starberry/gatsby-theme-starberry-mira/issues"
+  }
+}

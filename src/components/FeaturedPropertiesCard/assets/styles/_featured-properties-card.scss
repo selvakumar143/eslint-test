@@ -1,0 +1,92 @@
+@import '../../../../styles/inc/variable.css';
+
+.featured-properties-slide {
+    padding: 0 16px;
+    position: relative;
+    text-align: left;
+
+    @media all and (max-width: $screen-lg8) {
+        padding: 0 8px;
+    }
+
+    .featured-properties-img-zoom {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: 50% 10%;
+            transform: scale(1);
+            @include transition(all .4s ease-in-out);
+
+            @media all and (max-width: $screen-lg8) {
+                height: 250px;
+            }
+
+            @media all and (max-width: $mobile) {
+                height: 240px;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+
+        .featured-status {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(33, 33, 33, 0.3);
+            backdrop-filter: blur(4px);
+            color: var(--color-white);
+            padding: 11px 16px;
+        }
+    }
+
+    .featured-properties-text-wrapper {
+        margin-top: 32px;
+
+        @media all and (max-width: $screen-lg8) {
+            margin-top: 24px;
+        }
+
+        .featured-text-left {
+            margin-right: 20px;
+
+            .address {
+                @include fontsize(20px);
+                font-weight: var(--normal);
+                color: var(--color-dark);
+                line-height: var(--line-height-secondary);
+                padding-bottom: 4px;
+
+                @media all and (max-width: $mobile) {
+                    @include fontsize(18px);
+                }
+            }
+
+            .title {
+                @include fontsize(16px);
+                font-weight: var(--normal);
+                color: var(--color-dark-light);
+                line-height: var(--line-height-secondary);
+
+                @media all and (max-width: $mobile) {
+                    @include fontsize(14px);
+                    padding-top: 4px;
+                }
+            }
+        }
+
+        .featured-text-right {
+            .price-qualifier {
+                white-space: nowrap;
+            }
+        }
+    }
+}

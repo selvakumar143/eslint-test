@@ -1,0 +1,68 @@
+@import '../../../../styles/inc/variable.css';
+
+.property-desc-wrapper {
+    padding: 80px 0;
+
+    @media all and (max-width: $screen-lg8) {
+        padding: 48px 0;
+    }
+
+    @media all and (max-width: $mobile) {
+        padding: 40px 0;
+    }
+
+    .text-sm-heading {
+        color: var(--color-dark-light);
+        padding-bottom: 32px;
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 24px;
+        }
+    }
+
+    .property-desc {
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 48px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 40px;
+        }
+
+        p {
+            padding-bottom: 24px;
+
+            &:first-child {
+                @include fontsize(24px);
+
+                @media all and (max-width: $mobile) {
+                    @include fontsize(18px);
+                }
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .property-calc-wrapper {
+        padding-top: 56px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-top: 48px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding-top: 40px;
+        }
+    }
+
+    .property-sidebar {
+        top: 0;
+    
+        &.scrolled {
+            top: 110px;
+        }
+    }
+}

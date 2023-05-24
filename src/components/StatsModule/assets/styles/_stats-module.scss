@@ -1,0 +1,36 @@
+@import '../../../../styles/inc/variable.css';
+
+.stats-module-wrapper {
+    .stats-card {
+        text-align: center;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 40px;
+        }
+    
+        @media all and (max-width: $mobile) {
+            padding-bottom: 32px;
+        }
+    
+        .stats-title {
+            font-family: var(--font-secondary);
+            @include fontsize(56px);
+            font-weight: var(--medium);
+            color: var(--color-white);
+            line-height: var(--line-height-primary);
+            padding-bottom: 16px;
+    
+            @media all and (max-width: $mobile) {
+                @include fontsize(32px);
+                padding-bottom: 8px;
+            }
+        }
+    
+        .stats-text {
+            @include fontsize(18px);
+            font-weight: var(--normal);
+            color: var(--color-white);
+            line-height: var(--line-height-secondary);
+        }
+    }
+}

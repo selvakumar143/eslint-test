@@ -1,0 +1,119 @@
+@import '../../../../styles/inc/variable.css';
+
+.people-card-wrapper {
+    .people-card-img-zoom {
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: 50% 10%;
+            transform: scale(1);
+            @include transition(all .4s ease-in-out);
+
+            @media all and (max-width: $screen-lg8) {
+                height: 332px;
+            }
+
+            @media all and (max-width: $mobile) {
+                height: 280px;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .people-card-text-wrapper {
+        margin-top: 32px;
+
+        @media all and (max-width: $mobile) {
+            margin-top: 24px;
+        }
+
+        .people-name {
+            @include fontsize(20px);
+            font-weight: var(--normal);
+            color: var(--color-dark);
+            line-height: var(--line-height-secondary);
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(18px);
+            }
+        }
+
+        .people-position {
+            @include fontsize(16px);
+            font-weight: var(--normal);
+            color: var(--color-dark-light);
+            line-height: var(--line-height-secondary);
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(14px);
+            }
+        }
+
+        .people-card-list {
+            margin-top: 24px;
+
+            @media all and (max-width: $mobile) {
+                margin-top: 16px;
+            }
+
+            li {
+                position: relative;
+
+                &::after {
+                    content: '/';
+                    position: absolute;
+                    color: var(--color-dark-light2);
+                    right: -18px;
+
+                    @media all and (max-width: $mobile) {
+                        right: -15px;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 31px;
+
+                    @media all and (max-width: $mobile) {
+                        margin-right: 23px;
+                    }
+                }
+
+                &:last-child {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .people-phone {
+            @include fontsize(16px);
+            font-weight: var(--normal);
+            color: var(--color-dark);
+
+            &:hover {
+                color: var(--primary-color);
+                border-bottom: 1px solid var(--primary-color);
+            }
+        }
+
+        .people-email {
+            cursor: pointer;
+            @include fontsize(16px);
+            font-weight: var(--normal);
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
+
+            &:hover {
+                color: var(--secondary-color);
+                border-bottom: 1px solid var(--secondary-color);
+            }
+        }
+    }
+}

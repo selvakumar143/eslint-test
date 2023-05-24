@@ -1,0 +1,150 @@
+{
+  "property": {
+    "images": {
+      "results": {
+        "sizes": {
+          "416x300": "(min-width: 320px)"
+        }
+      },
+      "details": {
+        "sizes": {
+          "750x506": "(max-width: 750px)",
+          "1008x680": "(min-width: 751px)"
+        }
+      }
+    }
+  },
+  "new-developments": {
+    "images":{
+      "results": {
+        "sizes": {
+          "640x404": "(min-width: 320px)"
+        }
+      },
+      "details":{
+        "sizes": {
+          "750x506": "(max-width: 750px)",
+          "1600x680": "(min-width: 751px)"
+        }
+      }
+    }
+  },
+  "page": {
+    "banner_section_banner_image": {
+      "sizes": [
+        "1800x1000",
+        "768x397",
+        "376x667"
+      ],
+      "landing_banner_image": {
+        "sizes": {
+          "376x667": "(max-width: 480px)",
+          "768x397": "(max-width: 1100px)",
+          "1800x1000": "(min-width: 1100px)"
+        }
+      }
+    },
+    "tile_section_image": {
+      "sizes": [
+        "336x260",
+        "720x480",
+        "528x535"
+      ],
+      "tile_image": {
+        "sizes": {
+          "336x260": "(max-width: 480px)",
+          "720x480": "(max-width: 1100px)",
+          "528x535": "(min-width: 1100px)"
+        }
+      }
+    },
+    "valuation_section_tile_image":{
+        "sizes": [
+        "528x250"
+        ],
+        "valuation_tile_image":{
+        "sizes": {
+            "528x250": "(min-width: 320px)"
+        }
+        }
+    }
+  },
+  "blog": {
+    "tile_image": {
+      "sizes": [
+        "365x300"
+      ],
+      "small_image": {
+        "sizes": {
+          "365x300": "(min-width: 320px)"
+        }
+      }
+    },
+    "banner_image": {
+      "sizes": [
+        "750x500",
+        "720x500",
+        "336x240"
+      ],
+      "details": {
+        "sizes": {
+          "336x240": "(max-width: 480px)",
+          "720x500": "(max-width: 1100px)",
+          "750x500": "(min-width: 1100px)"
+        }
+      }
+    }
+  },
+  "area-guide":{
+    "tile_image":{
+      "sizes": [
+        "304x300"
+      ],
+      "small_image": {
+        "sizes": {
+          "304x300": "(min-width: 320px)"
+        }
+      }
+    },
+    "banner_image":{
+      "sizes": [
+        "1600x600",
+        "750x500",
+        "720x500",
+        "336x240"
+      ],
+      "details":{
+        "sizes": {
+          "336x240": "(max-width: 480px)",
+          "720x500": "(max-width: 1100px)",
+          "1600x600": "(min-width: 1100px)"
+        }
+      },
+      "details1":{
+        "sizes": {
+          "336x240": "(max-width: 480px)",
+          "720x500": "(max-width: 1100px)",
+          "750x500": "(min-width: 1100px)"
+        }
+      }
+    }
+  },
+  "team": {
+    "image": {
+      "sizes": [
+        "60t61",
+        "600ct"
+      ],
+      "propdetails_image": {
+        "sizes": {
+          "60t61": "(min-width: 60px)"
+        }
+      },
+      "tile_image": {
+        "sizes": {
+          "600ct": "(min-width: 320px)"
+        }
+      }
+    }
+  }
+}

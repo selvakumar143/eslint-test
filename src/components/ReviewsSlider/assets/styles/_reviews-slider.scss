@@ -1,0 +1,19 @@
+@import '../../../../styles/inc/variable.css';
+
+.reviews-slider-wrapper {
+    .reviews-slider {
+        .slick-list {
+            margin: 0 -15px;
+
+            @media all and (max-width: $screen-lg8) {
+                margin: 0 -8px;
+            }
+        }
+
+        .slick-dots {
+            @media all and (max-width: $mobile) {
+                margin-top: 32px;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@import '../../../../styles/inc/variable.css';
+
+.tile-block-review-wrapper {
+    background-color: var(--color-light2);
+
+    &.landing-page {
+        background-color: var(--color-light3);
+    }
+
+    .tile-review-img-wrapper {
+        position: relative;
+
+        img {
+            height: 535px;
+
+            @media all and (max-width: $screen-lg8) {
+                height: 480px;
+            }
+
+            @media all and (max-width: $mobile) {
+                height: 260px;
+            }
+        }
+
+        .review-play {
+            position: absolute;
+            left: 43%;
+            top: 40%;
+            z-index: 1;
+
+            // @media all and (max-width: $screen-lg) {
+            //     right: 78px;
+            // }
+
+            // @media all and (max-width: $mobile) {
+            //     right: 24px;
+            //     top: 24px;
+            // }
+
+            .review-play-btn {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                // background-color: var(--color-white);
+                background: rgba(240, 238, 232, 0.9);
+
+                @media all and (max-width: $mobile) {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .review-play-button {
+                .icon-play {
+                    @media all and (max-width: $mobile) {
+                        background-size: 10px;
+                        @include widthheight(10px, 10px);
+                    }
+                }
+
+                &:hover {
+                    .icon-play {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='20' viewBox='0 0 17 20' fill='none'%3E%3Cpath d='M16.5 9.13397C17.1667 9.51887 17.1667 10.4811 16.5 10.866L1.5 19.5263C0.833332 19.9112 0 19.4301 0 18.6603V1.33975C0 0.569946 0.833334 0.0888207 1.5 0.473721L16.5 9.13397Z' fill='%23084F58'/%3E%3C/svg%3E");
+                    }
+                }
+            }
+        }
+    }
+
+    .review-list {
+        padding-bottom: 40px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-top: 48px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding-top: 32px;
+            padding-bottom: 24px;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .review-text {
+        @include fontsize(24px);
+        font-weight: var(--normal);
+        color: var(--color-dark);
+        line-height: var(--line-height-secondary);
+        padding-bottom: 40px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 24px;
+        }
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(18px);
+        }
+    }
+
+    .review-name {
+        color: var(--color-dark-light);
+    }
+}

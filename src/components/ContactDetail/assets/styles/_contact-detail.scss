@@ -1,0 +1,72 @@
+@import '../../../../styles/inc/variable.css';
+
+.contact-detail-wrapper {
+    padding-top: 48px;
+
+    @media all and (max-width: $screen-lg8) {
+        padding-bottom: 56px;
+    }
+
+    @media all and (max-width: $mobile) {
+        padding-top: 8px;
+        padding-bottom: 40px;
+    }
+
+    .contact-heading-sm {
+        color: var(--color-dark-light);
+        padding-bottom: 24px;
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 16px;
+        }
+    }
+
+    .contact-phone {
+        padding-bottom: 8px;
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 4px;
+        }
+
+        a {
+            @include fontsize(18px);
+            font-weight: var(--normal);
+            color: var(--color-dark);
+            line-height: var(--line-height-secondary);
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(16px);
+            }
+
+            &:hover {
+                color: var(--primary-color);
+                border-bottom: solid 1px var(--primary-color);
+            }
+        }
+    }
+
+    .contact-email {
+        padding-bottom: 8px;
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 4px;
+        }
+
+        a {
+            @include fontsize(18px);
+            font-weight: var(--normal);
+            color: var(--primary-color);
+            line-height: var(--line-height-secondary);
+            border-bottom: solid 1px var(--primary-color);
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(16px);
+            }
+
+            &:hover {
+                color: var(--secondary-color);
+                border-bottom: solid 1px var(--secondary-color);
+            }
+        }
+    }
+}

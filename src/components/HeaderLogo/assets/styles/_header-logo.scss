@@ -1,0 +1,9 @@
+@import '../../../../styles/inc/variable.css';
+
+.logo-img {
+    width: var(--logo-desktop-width);
+
+    @media all and (max-width: $mobile) {
+        width: var(--logo-mobile-width);
+    }
+}

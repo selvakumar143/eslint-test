@@ -1,0 +1,67 @@
+@import '../../../../styles/inc/variable.css';
+
+.property-nav-sticky-wrapper {
+    background-color: var(--property-details-sticky-bg-color);
+    height: 80px;
+    z-index: 1050;
+    @include transition(all .4s ease-in-out);
+
+    .property-nav-sticky-call {
+        @include fontsize(16px);
+        font-weight: var(--normal);
+        color: var(--color-white);
+
+        a {
+            @include fontsize(16px);
+            font-weight: var(--semi-bold);
+            color: var(--color-white);
+            border-bottom: solid 1px transparent;
+
+            &:hover {
+                border-bottom: solid 1px var(--color-white);
+            }
+        }
+    }
+
+    .property-nav-sticky-list-first {
+        li {
+            position: relative;
+
+            &:not(:last-child) {
+                margin-right: 49px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                border-right: solid 1px var(--secondary-color-light);
+                height: 20px;
+                top: -2px;
+                right: -25px;
+            }
+
+            &:last-child {
+                &::after {
+                    content: none;
+                }
+            }
+
+            a, button {
+                font-family: var(--font-secondary);
+                @include fontsize(12px);
+                font-weight: var(--bold);
+                color: var(--color-light2);
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .property-nav-sticky-list-second {
+        li {
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+    }
+}

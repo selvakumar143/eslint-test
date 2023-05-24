@@ -1,0 +1,51 @@
+@import '../../../../styles/inc/variable.css';
+
+.footer-news-form {
+    height: 48px;
+    border: 1px solid var(--color-dark-light);
+
+    .form-control {
+        background-color: transparent;
+        border: 0;
+
+        &:hover, &:focus {
+            background-color: transparent;
+        }
+
+        &::placeholder {
+            color: var(--color-light2);
+        }
+    }
+
+    input[type=email] {
+        font-family: var(--font-base);
+        @include fontsize(14px);
+        font-weight: var(--normal);
+        color: var(--color-light2);
+        line-height: var(--line-height-secondary);
+    }
+
+    .news-btn {
+        padding: 0 10px;
+    }
+}
+
+.terms-text {
+    margin-top: 16px;
+    font-family: var(--font-base);
+    @include fontsize(14px);
+    font-weight: var(--normal);
+    color: var(--color-light3);
+    line-height: var(--line-height-secondary);
+
+    a {
+        text-decoration: none;
+        color: var(--color-light3);
+        border-bottom: solid 1px var(--color-light3);
+
+        &:hover {
+            color: var(--color-light3);
+            border-bottom: solid 1px transparent;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../../../styles/inc/variable.css';
+
+.careers-intro-wrapper {
+    padding: 80px 0;
+
+    @media all and (max-width: $screen-lg8) {
+        padding: 56px 0;
+    }
+
+    @media all and (max-width: $mobile) {
+        padding: 40px 0;
+    }
+
+    h2 {
+        @include fontsize(32px);
+        font-weight: var(--medium);
+        color: var(--color-dark);
+        line-height: var(--line-height-primary);
+        padding-bottom: 32px;
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(24px);
+            padding-bottom: 16px;
+        }
+
+        span, i {
+            font-family: var(--font-base);
+            font-weight: var(--light);
+            font-style: italic;
+        }
+    }
+
+    p {
+        padding-bottom: 48px;
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 24px;
+        }
+    }
+}

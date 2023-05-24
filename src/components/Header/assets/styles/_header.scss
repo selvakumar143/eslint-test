@@ -1,0 +1,103 @@
+@import '../../../../styles/inc/variable.css';
+
+.header {
+    .navbar {
+        background-color: var(--color-light2);
+        padding: 32px 40px;
+        border-bottom: solid 1px var(--color-light3);
+        @include transition(all .4s ease-in-out);
+
+        // @media all and (max-width: $screen-lg) {
+        //     padding: 35px 24px;
+        // }
+
+        @media alL and (max-width: $screen-md) {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+
+        @media all and (max-width: $ipad-mini) {
+            padding: 35px 24px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding: 24px 20px;
+        }
+
+        .container-fluid {
+            @media all and (max-width: $ipad-mini) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .contact-wrapper {
+        ul {
+            li {
+                margin-right: 40px;
+
+                a {
+                    span {
+                        font-family: var(--font-base);
+                        @include fontsize(18px);
+                        font-weight: var(--normal);
+                        color: var(--color-dark);
+                        line-height: var(--line-height-secondary);
+                    }
+                }
+                
+                @media all and (max-width: $mobile) {
+                    margin-right: 24px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+
+    &.header-scrolled {
+        &.sticky-module {
+            .navbar {
+                padding: 15px 40px;
+
+                // @media all and (max-width: $screen-lg) {
+                //     padding: 15px 24px;
+                // }
+        
+                @media all and (max-width: $mobile) {
+                    padding: 15px 20px;
+                }
+            }
+        }
+    }
+}
+
+.burger-menu-wrapper {
+    height: 100vh !important;
+    background-color: var(--color-light2) !important;
+    z-index: 1060 !important;
+
+    .offcanvas-header {
+        padding: 36px 24px;
+
+        .btn-close {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4.5 19.5L19.5 4.5M4.5 4.5L19.5 19.5' stroke='%23212121' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            @include widthheight(24px, 24px);
+            background-size: 24px;
+            opacity: 1;
+
+            &:hover, &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+
+    .offcanvas-body {
+        padding: 16px 24px;
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../../../styles/inc/variable.css';
+
+.property-history-back-wrapper {
+    height: 52px;
+    .history-back {
+        padding: 16px 0;
+
+        @media all and (max-width: $mobile) {
+            padding: 12px 0;
+        }
+
+        a {
+            i {
+                margin-right: 12px;
+            }
+
+            span {
+                @include fontsize(14px);
+                font-weight: var(--normal);
+                color: var(--color-dark-light);
+                border-bottom: solid 1px transparent;
+            }
+
+            &:hover {
+                span {
+                    border-bottom: solid 1px var(--color-dark-light);
+                }
+            }
+        }
+    }
+}

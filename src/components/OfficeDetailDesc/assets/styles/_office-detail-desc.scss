@@ -1,0 +1,64 @@
+@import '../../../../styles/inc/variable.css';
+
+.office-detail-desc-wrapper {
+    padding: 80px 0;
+
+    @media all and (max-width: $screen-lg8) {
+        padding: 48px 0;
+    }
+
+    @media all and (max-width: $mobile) {
+        padding: 40px 0;
+    }
+
+    .office-detail-text {
+        color: var(--color-dark-light);
+        padding-bottom: 32px;
+    }
+
+    .office-detail-desc {
+        p {
+            padding-bottom: 40px;
+
+            @media all and (max-width: $mobile) {
+                padding-bottom: 24px;
+            }
+
+            &:first-of-type {
+                @include fontsize(24px);
+                padding-bottom: 24px;
+
+                @media all and (max-width: $screen-lg8) {
+                    @include fontsize(20px);
+                }
+
+                @media all and (max-width: $mobile) {
+                    @include fontsize(18px);
+                }
+            }
+        }
+    }
+
+    .office-detail-desc-text {
+        p {
+            padding-bottom: 40px;
+
+            @media all and (max-width: $mobile) {
+                padding-bottom: 24px;
+            }
+        }
+    }
+
+    .divider-line {
+        padding-bottom: 0;
+    }
+
+    .office-detail-sidebar {
+        top: 0;
+        padding-bottom: 40px;
+    
+        &.scrolled {
+            top: 130px;
+        }
+    }
+}

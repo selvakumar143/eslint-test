@@ -1,0 +1,62 @@
+@import '../../../../styles/inc/variable.css';
+
+.property-details-gallery-wrapper {
+    padding-bottom: 80px;
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 32px;
+	row-gap: 32px;
+
+    @media all and (max-width: $screen-lg8) {
+        padding-bottom: 56px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 24px;
+    }
+
+    @media all and (max-width: $mobile) {
+        padding-bottom: 40px;
+        row-gap: 16px;
+    }
+
+    .property-details-card-img-zoom {
+        img {
+            height: 300px;
+
+            @media all and (max-width: $screen-lg8) {
+                height: 247px;
+            }
+    
+            @media all and (max-width: $mobile) {
+                height: 115px;
+            }
+        }
+
+        &.more-img {
+            position: relative;
+
+            .more-img-btn {
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+                font-family: var(--font-secondary);
+                @include fontsize(10px);
+                font-weight: var(--normal);
+                line-height: var(--line-height-secondary);
+                color: var(--color-dark);
+                text-align: center;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                background-color: var(--color-light2);
+                padding: 14px 16px;
+                display: block;
+
+                @media all and (max-width: $mobile) {
+                    right: 5px;
+                    bottom: 5px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

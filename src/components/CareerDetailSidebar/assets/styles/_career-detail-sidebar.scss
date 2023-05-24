@@ -1,0 +1,41 @@
+@import '../../../../styles/inc/variable.css';
+
+.career-detail-sidebar-wrapper {
+    .career-detail-text-wrapper {
+        h3 {
+            font-family: var(--font-secondary);
+            @include fontsize(32px);
+            font-weight: var(--medium);
+            color: var(--color-dark);
+            line-height: var(--line-height-primary);
+            padding-bottom: 16px;
+
+            @media all and (max-width: $screen-lg8) {
+                @include fontsize(32px);
+            }
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(20px);
+                padding-bottom: 16px;
+            }
+        }
+
+        p {
+            @include fontsize(16px);
+            color: var(--color-dark);
+            padding-bottom: 32px;
+        }
+
+        .career-detail-btn-wrapper {
+            margin-bottom: 16px;
+
+            &.career-btm {
+                margin-bottom: 24px;
+            }
+
+            a {
+                width: 100%;
+            }
+        }
+    }
+}

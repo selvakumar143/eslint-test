@@ -1,0 +1,105 @@
+@import '../../../../styles/inc/variable.css';
+
+.load-more-wrap {
+    grid-column: 1/span 3;
+    padding-bottom: 48px;
+
+    @media all and (max-width: $screen-lg) {
+        grid-column: 1/span 2;
+    }
+
+    @media all and (max-width: $mobile) {
+        grid-column: 1/span 1;
+    }
+
+    &.new-homes {
+        grid-column: 1/span 1;
+    }
+
+    .results-btn {
+        span {
+            border-bottom: solid 1px transparent;
+            @include transition(all .3s ease);
+        }
+
+        &.disabled {
+            opacity: 0.6;
+        }
+
+        &:hover {
+            span {
+                border-bottom: solid 1px var(--color-dark);
+            }
+        }
+
+        .icon-results-back {
+            margin-right: 12px;
+        }
+
+        .icon-results-next {
+            margin-left: 12px;
+        }
+    }
+
+    .pages-count {
+        .spacing {
+            font-family: var(--font-secondary);
+            @include fontsize(12px);
+            font-weight: var(--bold);
+            letter-spacing: 2px;
+            line-height: var(--line-height-secondary);
+            color: var(--color-dark2);
+            text-transform: uppercase;
+        }
+
+        .spacing-right {
+            padding-right: 16px;
+        }
+
+        .spacing-both {
+            padding-left: 16px;
+            padding-right: 5px;
+        }
+
+        .select-control {
+            border: 1px solid var(--color-light-grey);
+            border-radius: 2px;
+            padding: 13px 16px;
+            font-family: var(--font-secondary);
+            @include fontsize(12px);
+
+            .react-select__menu {
+                left: 0;
+            }
+        }
+    }
+
+    .pagination-list {
+        li {
+            a {
+                font-family: var(--font-secondary);
+                @include fontsize(12px);
+                font-weight: var(--bold);
+                letter-spacing: 2px;
+                line-height: var(--line-height-secondary);
+                text-transform: uppercase;
+                border-bottom: solid 1px transparent;
+                @include transition(all .2s ease-in-out);
+
+                &:hover, &.active {
+                    color: var(--primary-color);
+                    border-bottom: solid 1px var(--primary-color);
+                    padding-bottom: 8px;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 24px;
+
+                @media all and (max-width: $mobile) {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}

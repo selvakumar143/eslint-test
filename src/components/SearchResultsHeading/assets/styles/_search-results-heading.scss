@@ -1,0 +1,40 @@
+@import '../../../../styles/inc/variable.css';
+
+.search-results-heading {
+    font-family: var(--font-secondary);
+	@include fontsize(20px);
+	font-weight: var(--medium);
+    color: var(--color-dark);
+	line-height: var(--line-height-secondary);
+    padding-bottom: 12px;
+
+    .icon-info {
+        cursor: pointer;
+        position: relative;
+        top: -1px;
+        margin-left: 4px;
+
+        @media all and (max-width: $mobile) {
+            @include widthheight(16px, 16px);
+        }
+    }
+}
+
+.search-results-desc-text {
+    font-family: var(--font-base);
+    font-weight: var(--normal);
+    @include fontsize(14px);
+    line-height: var(--line-height-secondary);
+    color: var(--color-dark-light);
+    padding-bottom: 12px;
+
+    a {
+        color: var(--color-dark-light);
+        border-bottom: 1px solid var(--color-dark-light);
+        @include transition(all .3s ease);
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+}

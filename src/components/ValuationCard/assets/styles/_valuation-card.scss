@@ -1,0 +1,88 @@
+@import '../../../../styles/inc/variable.css';
+
+.valuation-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    // @media all and (max-width: $mobile) {
+    //     padding-bottom: 32px;
+    // }
+
+    .valuation-card-img-zoom {
+        img {
+            height: 280px;
+    
+            @media all and (max-width: $screen-lg8) {
+                height: 260px;
+            }
+        }
+    
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .valuation-text-wrapper {
+        background-color: var(--color-light2);
+        padding: 48px 56px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        @media all and (max-width: $screen-lg8) {
+            padding: 40px 24px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding: 30px 18px;
+        }
+
+        h1 {
+            @include fontsize(32px);
+            font-weight: var(--medium);
+            color: var(--color-dark);
+            line-height: var(--line-height-primary);
+            padding-bottom: 24px;
+    
+            @media all and (max-width: $screen-lg8) {
+                @include fontsize(24px);
+            }
+    
+            @media all and (max-width: $mobile) {
+                padding-bottom: 16px;
+            }
+    
+            span {
+                font-family: var(--font-base);
+                font-weight: var(--light);
+                font-style: italic;
+            }
+        }
+    
+        p {
+            color: var(--color-dark-light);
+            padding-bottom: 40px;
+
+            @media all and (max-width: $mobile) {
+                padding-bottom: 24px;
+            }
+        }
+
+        .valuation-btn {
+            margin-top: auto;
+            
+            .button-sec {
+                margin: 0 auto;
+                width: 304px;
+
+                @media all and (max-width: $screen-2xl) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

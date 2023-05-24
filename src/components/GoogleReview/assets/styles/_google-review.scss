@@ -1,0 +1,47 @@
+@import '../../../../styles/inc/variable.css';
+
+.google-review-wrapper {
+    padding-top: 40px;
+
+    @media all and (max-width: $screen-lg) {
+        padding-top: 24px;
+    }
+
+    @media all and (max-width: $mobile) {
+        padding-top: 16px;
+    }
+
+    .review-img {
+        margin-right: 16px;
+    }
+
+    .review-list {
+        margin-right: 24px;
+
+        @media all and (max-width: $mobile) {
+            margin-right: 16px;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-right: 2px;
+            }
+        }
+    }
+
+    .reviews-text {
+        @include fontsize(16px);
+        font-weight: var(--normal);
+        color: var(--color-dark-light);
+        line-height: var(--line-height-secondary);
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(14px);
+        }
+
+        span {
+            color: var(--color-dark);
+            font-weight: var(--semi-bold);
+        }
+    }
+}

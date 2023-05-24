@@ -1,0 +1,64 @@
+@import '../../../../styles/inc/variable.css';
+
+.tile-block-right-wrapper {
+    background-color: var(--color-light2);
+
+    &.careers-page {
+        background-color: var(--color-light3);
+    }
+
+    .tile-right-img-wrapper {
+        img {
+            height: 535px;
+
+            @media all and (max-width: $screen-lg8) {
+                height: 480px;
+            }
+
+            @media all and (max-width: $mobile) {
+                height: 260px;
+            }
+        }
+    }
+
+    .tile-block-right-title, h2 {
+        font-family: var(--font-secondary);
+        @include fontsize(32px);
+        font-weight: var(--medium);
+        color: var(--color-dark);
+        line-height: var(--line-height-primary);
+        padding-bottom: 32px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-top: 48px;
+        }
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(24px);
+            padding-top: 32px;
+            padding-bottom: 16px;
+        }
+
+        span,i {
+            font-family: var(--font-base);
+            font-weight: var(--light);
+            font-style: italic;
+        }
+    }
+
+    .tile-block-right-text, p {
+        @include fontsize(18px);
+        font-weight: var(--normal);
+        color: var(--color-dark);
+        line-height: var(--line-height-secondary);
+        padding-bottom: 48px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 24px;
+        }
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(16px);
+        }
+    }
+}

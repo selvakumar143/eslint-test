@@ -1,0 +1,84 @@
+@import '../../../../styles/inc/variable.css';
+
+.featured-properties-wrapper {
+    background-color: var(--color-light3);
+
+    .featured-heading-wrapper {
+        padding-bottom: 56px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 48px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding-bottom: 32px;
+        }
+
+        .areaguide-detail-tab {
+            align-items: center;
+            display: inline-flex;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            button {
+                background: transparent;
+                color: var(--color-dark);
+                &.active {
+                    color: var(--primary-color);
+                    border-bottom-color: var(--primary-color);
+                }
+                &:hover {
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                }
+            }
+        }
+
+        h2 {
+            @include fontsize(40px);
+            font-weight: var(--medium);
+            color: var(--color-dark);
+            line-height: var(--line-height-primary);
+
+            @media all and (max-width: $screen-lg8) {
+                @include fontsize(32px);
+            }
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(24px);
+                padding-bottom: 16px;
+            }
+
+            span {
+                font-family: var(--font-base);
+                font-weight: var(--light);
+                font-style: italic;
+            }
+
+            &.property-details {
+                @include fontsize(32px);
+
+                @media all and (max-width: $mobile) {
+                    @include fontsize(24px);
+                    padding-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    .featured-properties-slider {
+        .slick-list {
+            margin: 0 -15px;
+
+            @media all and (max-width: $screen-lg8) {
+                margin: 0 -8px;
+            }
+        }
+
+        .slick-dots {
+            @media all and (max-width: $mobile) {
+                margin-top: 32px;
+            }
+        }
+    }
+}

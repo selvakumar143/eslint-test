@@ -1,0 +1,169 @@
+@import '../../../../styles/inc/variable.css';
+
+.property-calc {
+    .property-calc-divider {
+        border-bottom: solid 1px var(--color-light3);
+        padding-top: 56px;
+        margin-bottom: 56px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-top: 48px;
+            margin-bottom: 48px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .calc-form-group {
+        margin-bottom: 24px;
+
+        @media all and (max-width: $mobile) {
+            margin-bottom: 16px;
+        }
+    
+        .form-label {
+            @include fontsize(14px);
+            font-weight: var(--normal);
+            color: var(--color-dark);
+            line-height: var(--line-height-secondary);
+            margin-bottom: 12px;
+        }
+    
+        .form-control {
+            border: 1px solid var(--color-dark-light2);
+            border-radius: 0;
+            height: 48px;
+            background-color: transparent;
+        }
+    
+        .dropdown-select {
+            border: 1px solid var(--color-dark-light2);
+            border-radius: 0;
+            height: 48px;
+            background-color: transparent;
+    
+            .select-control {
+                width: 100%;
+    
+                .react-select__menu {
+                    top: 40px;
+                }
+    
+                .react-select__value-container {
+                    padding-left: 16px;
+                }
+    
+                .react-select__indicators {
+                    padding-right: 16px;
+                }
+            }
+        }
+
+        .input-group {
+            .form-control {
+                border-right: 0;
+            }
+
+            .input-group-text {
+                @include fontsize(14px);
+                font-weight: var(--semi-bold);
+                color: var(--color-dark-light);
+                line-height: var(--line-height-secondary);
+                background-color: transparent;
+                border-color: var(--color-dark-light2);
+                border-radius: 0;
+                border-left: 0;
+            }
+        }
+    }
+
+    .calc-btn {
+        width: 100%;
+    }
+
+    .calc-title-sm {
+        @include fontsize(14px);
+        font-weight: var(--normal);
+        color: var(--color-dark);
+        line-height: var(--line-height-secondary);
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+
+    .calc-price {
+        font-family: var(--font-secondary);
+        @include fontsize(32px);
+        font-weight: var(--medium);
+        color: var(--color-dark);
+        line-height: var(--line-height-primary);
+        margin-bottom: 24px;
+    }
+
+    .calc-info {
+        @include fontsize(16px);
+        font-weight: var(--normal);
+        color: var(--color-dark);
+        line-height: var(--line-height-secondary);
+        margin-bottom: 32px;
+
+        a {
+            color: var(--primary-color);
+            border-bottom: solid 1px var(--primary-color);
+
+            &:hover {
+                color: var(--primary-dark);
+                border-bottom: solid 1px var(--primary-dark);
+            }
+        }
+    }
+
+    .calc-nego-wrapper {
+        .calc-nego-img {
+            .gatsby-image-wrapper {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                margin-right: 24px;
+    
+                img {
+                    width: 48px;
+                    height: 48px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+    
+        .calc-nego-text-card {
+            .calc-nego-text {
+                font-family: var(--font-base);
+                @include fontsize(14px);
+                font-weight: var(--semi-bold);
+                color: var(--color-dark3);
+                line-height: var(--line-height-secondary);
+                
+                &.stamp-calc-text {
+                    color: var(--color-dark2);
+                    margin-bottom: 10px;
+                }
+    
+                &-sm {
+                    font-family: var(--font-base);
+                    @include fontsize(14px);
+                    font-weight: var(--normal);
+                    color: var(--color-dark2);
+                    line-height: var(--line-height-secondary);
+                    margin-bottom: 10px;
+        
+                    .link-underline {
+                        @include fontsize(14px);
+                    }
+                }
+            }
+        }
+    }
+}
+

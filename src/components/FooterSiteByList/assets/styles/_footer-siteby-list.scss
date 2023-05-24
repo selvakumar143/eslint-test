@@ -1,0 +1,61 @@
+@import '../../../../styles/inc/variable.css';
+
+.siteby-list {
+    margin-bottom: 8px;
+
+    li {
+        position: relative;
+        margin-right: 32px;
+
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &::after {
+                content: none;
+            }
+        }
+
+        &::after {
+            content: '/';
+            position: absolute;
+            color: var(--color-dark-light);
+            right: -18px;
+            top: 2px;
+        }
+
+        a {
+            font-family: var(--font-base);
+            @include fontsize(16px);
+            font-weight: var(--normal);
+            color: var(--color-light2);
+            line-height: var(--line-height-secondary);
+            width: fit-content;
+            border-bottom: solid 1px transparent;
+            @include transition(all .3s ease);
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(14px);
+            }
+
+            &:hover {
+                border-bottom: 1px solid var(--color-light2);
+            }
+        }
+    }
+}
+
+.footer-copyright {
+    font-family: var(--font-base);
+    @include fontsize(16px);
+    font-weight: var(--normal);
+    color: var(--color-light2);
+    line-height: var(--line-height-secondary);
+
+    @media all and (max-width: $mobile) {
+        @include fontsize(14px);
+    }
+}

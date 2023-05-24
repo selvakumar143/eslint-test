@@ -1,0 +1,21 @@
+@import '../../../../styles/inc/variable.css';
+
+.static-detail-text-sm {
+    color: var(--color-dark-light);
+    padding-bottom: 12px;
+
+    @media all and (max-width: $mobile) {
+        padding-bottom: 0;
+        width: 35%;
+    }
+}
+
+.static-social-share-list {
+    button {
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

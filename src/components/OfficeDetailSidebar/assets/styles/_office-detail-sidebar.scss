@@ -1,0 +1,70 @@
+@import '../../../../styles/inc/variable.css';
+
+.office-detail-sidebar-wrapper {
+    .office-detail-card-text-wrapper {
+        margin-bottom: 32px;
+
+        .office-detail-card-title {
+            font-family: var(--font-base);
+            @include fontsize(20px);
+            font-weight: var(--normal);
+            color: var(--color-dark3);
+            line-height: var(--line-height-secondary);
+            padding-bottom: 8px;
+    
+            @media all and (max-width: $mobile) {
+                @include fontsize(18px);
+            }
+        }
+    
+        .office-detail-card-text {
+            font-family: var(--font-base);
+            @include fontsize(16px);
+            font-weight: var(--normal);
+            color: var(--color-grey);
+            line-height: var(--line-height-secondary);
+            padding-bottom: 8px;
+    
+            @media all and (max-width: $mobile) {
+                @include fontsize(14px);
+            }
+        }
+    
+        .office-detail-card-mobile {
+            a {
+                @include fontsize(16px);
+                font-weight: var(--normal);
+                color: var(--color-dark);
+                line-height: var(--line-height-secondary);
+    
+                @media all and (max-width: $mobile) {
+                    @include fontsize(14px);
+                }
+    
+                &:hover {
+                    color: var(--primary-color);
+                    border-bottom: solid 1px var(--primary-color);
+                }
+            }
+        }
+    
+        .office-detail-card-email {
+            a {
+                @include fontsize(16px);
+                font-weight: var(--normal);
+                color: var(--primary-color);
+                line-height: var(--line-height-secondary);
+                border-bottom: solid 1px var(--primary-color);
+    
+                @media all and (max-width: $mobile) {
+                    @include fontsize(14px);
+                }
+    
+                &:hover {
+                    color: var(--secondary-color);
+                    border-bottom: solid 1px var(--secondary-color);
+                }
+            }
+        }
+    }
+}

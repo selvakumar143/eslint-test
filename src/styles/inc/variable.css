@@ -1,0 +1,118 @@
+:root {
+    --font-base: 'Petrona';
+    --font-secondary: 'Figtree';
+  
+    --primary-color: #A66C22;
+    --primary-dark: #9A6420;
+    --secondary-color: #084F58;
+    --secondary-dark: #081D3C;
+    --secondary-color-light: #86C2D1;
+    --color-white: #ffffff;
+    --color-light: #F8F8F8;
+    --color-light2: #F0EEE8;
+    --color-light3: #E7E4DD;
+    --color-light4: #787C83;
+    --color-dark: #212121;
+    --color-dark-light: #5B5B5B;
+    --color-dark-light2: #CFCDC8;
+    --color-dark-light3: #34373D;
+    --color-black: #000000;
+    --color-light-grey: #e6e6e6;
+  
+    --light: 300;
+    --normal: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+
+    --line-height-primary: 100%;
+    --line-height-secondary: 140%;
+
+    /* Logo width */
+    --logo-desktop-width: 87px;
+    --logo-mobile-width: 87px;
+    /* Logo width */
+
+    /* Button primary class="button-primary" */
+    --button-primary-text-color: #A66C22;
+    --button-primary-border-color: #A66C22;
+    --button-primary-hover-text-color: #084F58;
+    --button-primary-hover-border-color: #084F58;
+    /* Button primary */
+
+    /* Button white class="button-white" */
+    --button-white-text-color: #ffffff;
+    --button-white-border-color: #ffffff;
+    --button-white-hover-text-color: #E7E4DD;
+    --button-white-hover-border-color: #E7E4DD;
+    /* Button white */
+
+    /* Button secondary primary filled class="button-sec-primary-filled" */
+    --button-sec-primary-filled-text-color: #ffffff;
+    --button-sec-primary-filled-border-color: #A66C22;
+    --button-sec-primary-filled-bg-color: #A66C22;
+    --button-sec-primary-filled-hover-text-color: #ffffff;
+    --button-sec-primary-filled-hover-border-color: #9A6420;
+    --button-sec-primary-filled-hover-bg-color: #9A6420;
+    /* Button secondary primary filled */
+
+    /* Button secondary primary outline class="button-sec-primary-outline" */
+    --button-sec-primary-outline-text-color: #ffffff;
+    --button-sec-primary-outline-border-color: #A66C22;
+    --button-sec-primary-outline-bg-color: #A66C22;
+    --button-sec-primary-outline-hover-text-color: #ffffff;
+    --button-sec-primary-outline-hover-border-color: #ffffff;
+    --button-sec-primary-outline-hover-bg-color: transparent;
+    /* Button secondary primary outline */
+
+    /* Button secondary primary outline dark class="button-sec-primary-outline-dark" */
+    --button-sec-primary-outline-dark-text-color: #A66C22;
+    --button-sec-primary-outline-dark-border-color: #A66C22;
+    --button-sec-primary-outline-dark-bg-color: transparent;
+    --button-sec-primary-outline-dark-hover-text-color: #ffffff;
+    --button-sec-primary-outline-dark-hover-border-color: #A66C22;
+    --button-sec-primary-outline-dark-hover-bg-color: #A66C22;
+    /* Button secondary primary outline dark */
+
+    /* Button secondary outline dark class="button-sec-outline-dark" */
+    --button-sec-outline-dark-text-color: #084f58;
+    --button-sec-outline-dark-border-color: #084f58;
+    --button-sec-outline-dark-bg-color: transparent;
+    --button-sec-outline-dark-hover-text-color: #ffffff;
+    --button-sec-outline-dark-hover-border-color: #084f58;
+    --button-sec-outline-dark-hover-bg-color: #084f58;
+    /* Button secondary outline dark */
+
+    /* Search filter */
+    --search-filter-bg-color: #084F58;
+    --search-filter-placeholder-text-color: #F0EEE8;
+    --search-filter-placeholder-hover-text-color: #A66C22;
+    --search-filter-single-value-text-color: #ffffff;
+    --search-filter-single-value-hover-text-color: #A66C22;
+    --search-filter-dropdown-hover-text-color: #ffffff;
+    --search-filter-dropdown-hover-bg-color: #A66C22;
+    --search-filter-divider-line-color: #86C2D1;
+    /* Search filter */
+
+    /* Search filter autocomplete */
+    --search-filter-autocomplete-bg-color: #A66C22;
+    --search-filter-suggestion-text-color: #ffffff;
+    /* Search filter autocomplete */
+
+    /* Property details page bg color class="property-banner-module-wrapper" */
+    --property-banner-bg-module-wrapper: #084F58;
+    --property-details-sticky-bg-color: #084f58;
+    /* Property details page bg color */
+
+    /* News, Teams Tab color class="inner-intro-list" */
+    --tab-list-text-color: #5B5B5B;
+    --tab-list-border-color: transparent;
+    --tab-list-hover-text-color: #A66C22;
+    --tab-list-hover-border-color: #A66C22;
+    /* News, Teams Tab color */
+
+    /* Pattern banner color class="pattern-banner-wrapper section-p blue/brown" */
+    --pattern-banner-bg-primary: #A66C22;
+    --pattern-banner-bg-secondary: #084F58;
+    /* Pattern banner color */
+}

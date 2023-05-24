@@ -1,0 +1,39 @@
+@import '../../../../styles/inc/variable.css';
+
+.contact-intro-wrapper {
+    h1 {
+        @include fontsize(48px);
+        font-weight: var(--medium);
+        color: var(--color-dark);
+        line-height: var(--line-height-primary);
+        padding-bottom: 32px;
+
+        @media all and (max-width: $screen-lg8) {
+            @include fontsize(40px);
+            padding-bottom: 24px;
+        }
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(24px);
+            padding-bottom: 16px;
+        }
+
+        span {
+            font-family: var(--font-base);
+            font-weight: var(--light);
+            font-style: italic;
+        }
+    }
+
+    p {
+        color: var(--color-dark-light);
+
+        a {
+            border-bottom: 1px solid;
+            
+            &:hover {
+                border-bottom: 1px solid transparent;
+            }
+        }
+    }
+}

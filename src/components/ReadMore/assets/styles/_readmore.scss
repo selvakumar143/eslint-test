@@ -1,0 +1,32 @@
+.read-more-wrap {
+    .read-more-section {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        line-height: 140%;
+        font-size: 18px;
+
+        &::after {
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    .read-more-button {
+        color: var(--primary-color);
+        line-height: 100%;
+        transition: all 0.3s ease-in-out;
+        margin-top: 16px;
+        border-bottom: 1px solid;
+        font-size: 18px;
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    @media all and (max-width: $mobile) {
+        .read-more-section, .read-more-button { 
+            font-size: 16px;
+        }
+    }
+}

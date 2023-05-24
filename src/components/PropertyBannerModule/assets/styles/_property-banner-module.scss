@@ -1,0 +1,147 @@
+@import '../../../../styles/inc/variable.css';
+
+.property-banner-module-wrapper {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+        background-color: var(--property-banner-bg-module-wrapper);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        height: 100%;
+        width: 100%;
+        background: url('../images/bg_pattern.svg');
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .property-address {
+        font-family: var(--font-secondary);
+        @include fontsize(32px);
+        font-weight: var(--medium);
+        line-height: var(--line-height-primary);
+        color: var(--color-white);
+        padding-bottom: 16px;
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(24px);
+            padding-bottom: 8px;
+        }
+    }
+
+    .property-price {
+        font-family: var(--font-secondary);
+        @include fontsize(20px);
+        font-weight: var(--medium);
+        line-height: var(--line-height-primary);
+        color: var(--color-white);
+        padding-bottom: 32px;
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(16px);
+            padding-bottom: 24px;
+        }
+    }
+
+    .property-title {
+        @include fontsize(16px);
+        font-weight: var(--normal);
+        line-height: var(--line-height-secondary);
+        color: var(--color-white);
+        padding-bottom: 32px;
+    }
+
+    .property-btn {
+        .button-sec {
+            width: 100%;
+
+            @media all and (max-width: $screen-lg8) {
+                width: 300px;
+            }
+        }
+    }
+
+    .property-contact {
+        @include fontsize(16px);
+        font-weight: var(--normal);
+        line-height: var(--line-height-secondary);
+        color: var(--color-white);
+        padding-top: 16px;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-bottom: 48px;
+        }
+
+        a {
+            color: var(--color-white);
+            border-bottom: solid 1px transparent;
+            font-weight: var(--semi-bold);
+
+            &:hover {
+                border-bottom: solid 1px var(--color-white);
+            }
+        }
+    }
+
+    .property-nego-wrapper {
+        padding-bottom: 32px;
+        @media all and (min-width: $mobile) {
+            padding-bottom: 48px;
+        }
+
+        @media all and (min-width: $screen-lg8) {
+            padding-top: 16px;
+            padding-bottom: 48px;
+        }
+        
+        .property-nego-img {
+            .gatsby-image-wrapper {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: 24px;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .property-nego-text {
+            font-family: var(--font-base);
+            @include fontsize(16px);
+            font-weight: var(--normal);
+            color: var(--color-white);
+            line-height: var(--line-height-secondary);
+
+            a {
+                font-weight: var(--semi-bold);
+                color: var(--primary-color);
+                border-bottom: solid 1px transparent;
+                @include transition(all .3s ease);
+
+                &:hover {
+                    border-bottom: solid 1px var(--primary-color);
+                }
+            }
+        }
+    }
+}

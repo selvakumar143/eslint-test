@@ -1,0 +1,27 @@
+@import '../../../../styles/inc/variable.css';
+
+.static-detail-intro-wrapper {
+    padding-top: 48px;
+    padding-bottom: 40px;
+
+    @media all and (max-width: $mobile) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    h1 {
+        @include fontsize(40px);
+        font-weight: var(--medium);
+        color: var(--color-dark);
+        padding-bottom: 24px;
+
+        @media all and (max-width: $screen-lg8) {
+            @include fontsize(32px);
+        }
+
+        @media all and (max-width: $mobile) {
+            @include fontsize(20px);
+            padding-bottom: 16px;
+        }
+    }
+}

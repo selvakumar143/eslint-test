@@ -1,0 +1,73 @@
+@import '../../../../styles/inc/variable.css';
+
+.inner-intro-heading {
+    font-family: var(--font-secondary);
+    @include fontsize(40px);
+    font-weight: var(--medium);
+    line-height: var(--line-height-primary);
+    color: var(--color-dark);
+
+    @media all and (max-width: $screen-lg8) {
+        @include fontsize(32px);
+    }
+
+    @media all and (max-width: $mobile) {
+        @include fontsize(24px);
+    }
+}
+
+.inner-intro-list {
+    li {
+        a {
+            font-family: var(--font-secondary);
+            @include fontsize(12px);
+            font-weight: var(--bold);
+            letter-spacing: 2px;
+            line-height: var(--line-height-secondary);
+            text-transform: uppercase;
+            border-bottom: solid 1px var(--tab-list-border-color);
+            @include transition(all .2s ease-in-out);
+            color: var(--tab-list-text-color);
+            padding-bottom: 8px;
+
+            &:hover, &.active {
+                color: var(--tab-list-hover-text-color);
+                border-bottom: solid 1px var(--tab-list-hover-border-color);
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 40px;
+
+            @media all and (max-width: $mobile) {
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.mobile-tab-wrapper {
+    border: 1px solid var(--color-dark-light2);
+    border-radius: 0;
+    padding: 4px 0;
+    margin-top: 24px;
+
+    .select-control {
+		.react-select__control {
+			.react-select__value-container {
+                padding-left: 16px;
+			}
+
+            .react-select__indicators {
+                padding-right: 16px;
+            }
+		}
+
+		.react-select__menu {
+            background-color: var(--color-light2);
+			top: 40px;
+			border-radius: 0;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 7px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.16);
+		}
+	}
+}

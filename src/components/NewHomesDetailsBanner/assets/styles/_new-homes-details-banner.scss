@@ -1,0 +1,74 @@
+@import '../../../../styles/inc/variable.css';
+
+.property-banner-wrapper {
+    &.new-homes-banner-wrapper {
+        padding: 32px 0;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-top: 24px;
+            padding-bottom: 40px;
+        }
+    
+        @media all and (max-width: $mobile) {
+            padding-bottom: 32px;
+        }
+
+        .property-banner-img-zoom {
+            position: relative;
+            overflow: hidden;
+    
+            img {
+                height: 580px;
+        
+                @media all and (max-width: $screen-lg8) {
+                    height: 480px;
+                }
+        
+                @media all and (max-width: $mobile) {
+                    height: 240px;
+                }
+            }
+    
+            .property-banner-list {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+    
+                @media all and (max-width: $mobile) {
+                    position: relative;
+                    bottom: 0;
+                    left: 0;
+                    padding-top: 16px;
+                }
+    
+                li {
+                    &:not(:last-child) {
+                        margin-right: 12px;
+                    }
+
+                    @media all and (max-width: $mobile) {
+                        margin-bottom: 12px;
+                    }
+    
+                    a, button {
+                        font-family: var(--font-secondary);
+                        @include fontsize(10px);
+                        font-weight: var(--normal);
+                        line-height: var(--line-height-secondary);
+                        color: var(--color-dark);
+                        text-align: center;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        background-color: var(--color-light2);
+                        padding: 14px 16px;
+                        display: block;
+    
+                        i {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

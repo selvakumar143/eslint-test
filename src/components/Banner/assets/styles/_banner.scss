@@ -1,0 +1,174 @@
+@import '../../../../styles/inc/variable.css';
+
+.banner {
+    position: relative;
+    height: 740px;
+
+    @media all and (max-width: $screen-lg8) {
+        height: auto;
+        background-color: var(--color-light2);
+    }
+
+    .banner-img {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+
+        @media all and (max-width: $screen-lg8) {
+            position: relative;
+            height: 500px;
+        }
+
+        @media all and (max-width: $mobile) {
+            height: 260px;
+        }
+    }
+
+    .overlay-bg {
+        background: rgba(240, 238, 232, 0.9);
+        backdrop-filter: blur(4px);
+        position: absolute;
+        top: 0;
+        width: 45%;
+        height: 100%;
+
+        @media all and (max-width: $screen-lg8) {
+            background: none;
+            backdrop-filter: none;
+        }
+    }
+
+    .banner-search-container {
+        position: relative;
+        z-index: 1;
+
+        @media all and (max-width: $screen-lg8) {
+            padding-top: 48px;
+        }
+
+        @media all and (max-width: $mobile) {
+            padding-top: 32px;
+        }
+
+        h1 {
+            @include fontsize(48px);
+            font-weight: var(--medium);
+            color: var(--color-dark);
+            line-height: var(--line-height-primary);
+            padding-bottom: 32px;
+
+            @media all and (max-width: $screen-lg8) {
+                padding-bottom: 16px;
+            }
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(24px);
+            }
+
+            span {
+                font-family: var(--font-base);
+                font-weight: var(--light);
+                font-style: italic;
+            }
+        }
+
+        p {
+            @include fontsize(18px);
+            font-weight: var(--normal);
+            color: var(--color-dark-light);
+            line-height: var(--line-height-secondary);
+            padding-bottom: 48px;
+
+            @media all and (max-width: $screen-lg) {
+                padding-bottom: 32px;
+            }
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(16px);
+                padding-bottom: 24px;
+            }
+        }
+
+        .button-list {
+            padding-bottom: 48px;
+
+            @media all and (max-width: $screen-lg) {
+                padding-bottom: 32px;
+            }
+
+            @media all and (max-width: $mobile) {
+                padding-bottom: 24px;
+            }
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 48px;
+
+                    @media all and (max-width: $mobile) {
+                        margin-right: 32px;
+                    }
+                }
+            }
+        }
+
+        .office-details-wrapper {
+            padding-bottom: 48px;
+    
+            .office-landing-card-mobile {
+                padding-bottom: 8px;
+
+                a {
+                    @include fontsize(16px);
+                    font-weight: var(--normal);
+                    color: var(--color-dark);
+                    line-height: var(--line-height-secondary);
+    
+                    @media all and (max-width: $mobile) {
+                        @include fontsize(14px);
+                    }
+    
+                    &:hover {
+                        color: var(--primary-color);
+                        border-bottom: solid 1px var(--primary-color);
+                    }
+                }
+            }
+    
+            .office-landing-card-email {
+                padding-bottom: 8px;
+
+                a {
+                    @include fontsize(16px);
+                    font-weight: var(--normal);
+                    color: var(--primary-color);
+                    line-height: var(--line-height-secondary);
+                    border-bottom: solid 1px var(--primary-color);
+        
+                    @media all and (max-width: $mobile) {
+                        @include fontsize(14px);
+                    }
+        
+                    &:hover {
+                        color: var(--secondary-color);
+                        border-bottom: solid 1px var(--secondary-color);
+                    }
+                }
+            }
+
+            .office-landing-card-text {
+                font-family: var(--font-base);
+                @include fontsize(16px);
+                font-weight: var(--normal);
+                color: var(--color-grey);
+                line-height: var(--line-height-secondary);
+    
+                @media all and (max-width: $mobile) {
+                    @include fontsize(14px);
+                }
+            }
+        }
+    }
+}

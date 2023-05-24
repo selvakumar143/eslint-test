@@ -1,0 +1,53 @@
+@import '../../../../styles/inc/variable.css';
+
+.office-detail-map-wrapper {
+    position: relative;
+
+    .office-detail-map-title {
+        color: var(--color-dark);
+        @include fontsize(20px);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-height-secondary);
+        margin-bottom: 16px;
+    }
+
+    .property-details-map {
+        height: 400px;
+
+        @media all and (max-width: $mobile) {
+            height: 250px;
+        }
+    }
+
+    .office-detail-map-text-link {
+        margin-top: 16px;
+        @include fontsize(16px);
+        font-family: var(--font-secondary);
+        color: var(--color-dark);
+        font-weight: var(--medium);
+        line-height: var(--line-height-primary);
+
+        span {
+            font-family: var(--font-base);
+            font-style: italic;
+            font-weight: var(--light);
+        }
+
+        a {
+            @include fontsize(16px);
+            font-weight: var(--normal);
+            color: var(--primary-color);
+            line-height: var(--line-height-secondary);
+            border-bottom: solid 1px var(--primary-color);
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(16px);
+            }
+
+            &:hover {
+                color: var(--secondary-color);
+                border-bottom: solid 1px var(--secondary-color);
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../../../styles/inc/variable.css';
+
+.static-team-member-list {
+    li {
+        &:not(:last-child) {
+            margin-right: 16px;
+
+            // @media all and (max-width: $mobile) {
+            //     margin-right: 16px;
+            // }
+        }
+
+        .static-team-member-img {
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+
+                @media all and (max-width: $mobile) {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+
+        .static-team-member-text {
+            @include fontsize(18px);
+            font-weight: var(--normal);
+            color: var(--color-dark-light);
+            line-height: var(--line-height-secondary);
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(16px);
+            }
+
+            a {
+                color: var(--primary-color);
+                border-bottom: solid 1px var(--primary-color);
+
+                &:hover {
+                    color: var(--secondary-color);
+                    border-bottom: solid 1px var(--secondary-color);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../../../styles/inc/variable.css';
+
+.landing-intro-module-wrapper {
+    .landing-intro-text-wrapper {
+        text-align: center;
+
+        .landing-text-sm {
+            color: var(--color-dark-light);
+            padding-bottom: 24px;
+        }
+
+        p {
+            @include fontsize(24px);
+
+            @media all and (max-width: $screen-lg8) {
+                @include fontsize(20px);
+            }
+
+            @media all and (max-width: $mobile) {
+                @include fontsize(18px);
+            }
+        }
+    }
+}
