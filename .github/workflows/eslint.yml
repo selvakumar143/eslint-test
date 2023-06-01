@@ -29,7 +29,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+        
+      - name: Authenticate with private NPM package
+        run: echo -e "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}\n@starberry:registry=https://npm.pkg.github.com/\n@starberry:alwaysAuth=true" > ~/.npmrc
       - name: Install ESLint
         run: |
           npm install eslint@8.10.0 --force 
